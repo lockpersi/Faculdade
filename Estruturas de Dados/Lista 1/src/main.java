@@ -46,7 +46,9 @@ public class main {
 					main(args);
 					break;
 				default:
-					System.out.println("Erro louco 2z222x2x2x2");
+					System.out.println("Você não inseriu um valor correto !");
+					System.out.println("Reiniciando o programa...");
+					main(args);
 					break;
 				}
 				
