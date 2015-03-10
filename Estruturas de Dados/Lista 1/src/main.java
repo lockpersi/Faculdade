@@ -2,12 +2,14 @@ import java.util.Scanner;
 
 public class main {
 
+	static Scanner ler = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 
 		byte menu;
 		char sairopc;
 		
-		Scanner ler = new Scanner(System.in);
+		//Scanner ler = new Scanner(System.in);
 		
 		MenuGlobal menuglobal = new MenuGlobal();
 		
@@ -34,7 +36,7 @@ public class main {
 						+ "programa digite S caso não digite N: ");
 				
 				Scanner dados = new Scanner(System.in);
-				
+								
 				sairopc = dados.nextLine().charAt(0);
 				
 				switch(sairopc){
