@@ -7,7 +7,7 @@ public class MenuGlobal {
 	System.out.println("1) Cadastrar");
 	System.out.println("2) Pesquisar");
 	System.out.println("3) Relatórios");
-	System.out.println("9) Sair");
+	System.out.println("99) Sair");
 	System.out.print("Digite uma opção: ");
 	}
 }

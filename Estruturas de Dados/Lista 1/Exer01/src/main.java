@@ -25,14 +25,17 @@ public class main {
 		
 		case 1: 
 				System.out.println("Você escolheu Cadastrar Cliente");
+				main(args);
 				break;
 		case 2:
 				System.out.println("Voce escolheu Pesquisar Cliente");
+				main(args);
 				break;
 		case 3:
 				System.out.println("Voce escolheu Relatórios de Cliente");
+				main(args);
 				break;
-		case 9:
+		case 99:
 				System.out.println("Voce escolheu sair do programa...");
 				System.out.println("Caso voce realmente deseja sair do "
 						+ "programa digite S caso não digite N: ");
@@ -44,6 +47,7 @@ public class main {
 				
 				case 's': case 'S':
 					System.out.println("Saindo do programa...");
+					System.exit(0);
 					break;
 				case 'N' : case 'n':
 					main(args);
@@ -57,7 +61,8 @@ public class main {
 				
 				break;
 		default:
-			 main(args);
+			System.out.println("Opção invalida!");
+			main(args);
 			 break;
 		
 		}
