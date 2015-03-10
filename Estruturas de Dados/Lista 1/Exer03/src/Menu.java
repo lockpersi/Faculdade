@@ -10,6 +10,8 @@ public class Menu {
 		MenuGlobal.menuglobal();
 		opc = entrada.next();
 		
+		entrada.nextLine();
+		
 		SwitchMenu.switchmenu(opc);
 	}
 }
