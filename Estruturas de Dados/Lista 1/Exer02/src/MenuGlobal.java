@@ -22,17 +22,46 @@ public class MenuGlobal {
 		switch(opc){
 		
 		case 1:
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
 				System.out.println("Você escolheu Empilhar as pilhas");
-				break;
+				Menu.main(null);
 		case 2:
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
 				System.out.println("Você escolheu Desempilhar as pilhas");
-				break;
+				Menu.main(null);
 		case 3:
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
 				System.out.println("Você escolheu Topo");
-				break;
+				Menu.main(null);
+		case 4:
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
+				System.out.println("Você escolheu imprimir elementos");
+				Menu.main(null);
+		case 5:
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
+				System.out.println("Você escolheu impromir indice topo");
+		case 6:
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
+				System.out.println("Você escolheu imprimir numero de elementos");
+				Menu.main(null);
 		default:
-				System.out.println("Caso Default");
-				break;
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
+				System.out.println("Você escolheu uma opção inválida, reiniciando o programa !");
+				Menu.main(null);
 		}
 	}
 
