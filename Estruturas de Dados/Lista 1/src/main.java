@@ -2,19 +2,21 @@ import java.util.Scanner;
 
 public class main {
 
-	static Scanner ler = new Scanner(System.in);
+	//static Scanner ler = new Scanner(System.in);
 	
 	public static void main(String[] args) {
 
 		byte menu;
 		char sairopc;
 		
-		//Scanner ler = new Scanner(System.in);
+		Scanner ler = new Scanner(System.in);
 		
 		MenuGlobal menuglobal = new MenuGlobal();
 		
 		menuglobal.menuglobal();
 		menu = ler.nextByte();
+		
+		ler.nextLine();
 		
 		//debug menu
 		//System.out.println("Numero do menu:" +  menu);
@@ -35,9 +37,8 @@ public class main {
 				System.out.println("Caso voce realmente deseja sair do "
 						+ "programa digite S caso não digite N: ");
 				
-				Scanner dados = new Scanner(System.in);
 								
-				sairopc = dados.nextLine().charAt(0);
+				sairopc = ler.nextLine().charAt(0);
 				
 				switch(sairopc){
 				
