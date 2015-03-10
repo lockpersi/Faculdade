@@ -1,6 +1,12 @@
 
 public class MenuGlobal {
 	
+	private static void reset(){
+		for(int i=0;i<30;i++){
+			System.out.println("");
+		}
+	}
+	
 	public static void menuglobal(){
 		
 		System.out.println("****************************");
@@ -24,45 +30,31 @@ public class MenuGlobal {
 		switch(opc){
 		
 		case 1:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Você escolheu Empilhar as pilhas");
 				Menu.main(null);
 		case 2:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Você escolheu Desempilhar as pilhas");
 				Menu.main(null);
 		case 3:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Você escolheu Topo");
 				Menu.main(null);
 		case 4:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Você escolheu imprimir elementos");
 				Menu.main(null);
 		case 5:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Você escolheu impromir indice topo");
 				Menu.main(null);
 		case 6:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Você escolheu imprimir numero de elementos");
 				Menu.main(null);
 		case 99:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Voce escolheu sair do programa...");
 				System.out.println("Caso voce realmente deseja sair do "
 						+ "programa digite S caso não digite N: ");
@@ -76,23 +68,17 @@ public class MenuGlobal {
 					System.exit(0);
 					break;
 				case 'N': case 'n':
-					for(int i=0;i<30;i++){
-						System.out.println("");
-					}
+					reset();
 					Menu.main(null);
 					break;
 				default:
-					for(int i=0;i<30;i++){
-						System.out.println("");
-					}
+					reset();
 					System.out.println("Opção Inválida");
 					Menu.main(null);
 					break;
 				}
 		default:
-				for(int i=0;i<30;i++){
-					System.out.println("");
-				}
+				reset();
 				System.out.println("Você escolheu uma opção inválida, reiniciando o programa !");
 				Menu.main(null);
 		}
