@@ -11,14 +11,16 @@ public class MenuGlobal {
 		System.out.println("4) Imprimir elementos (topo => base)");
 		System.out.println("5) Imprimir índice topo");
 		System.out.println("6) Imprimir número elementos");
-		System.out.println("9) Sair");
+		System.out.println("99) Sair");
 		System.out.println("****************************");
 		System.out.print("Digite uma opção: ");
 		
 	}
 	
 	public static void switchmenu(byte opc){
-	
+		
+		char sairopc;
+		
 		switch(opc){
 		
 		case 1:
@@ -50,12 +52,43 @@ public class MenuGlobal {
 					System.out.println("");
 				}
 				System.out.println("Você escolheu impromir indice topo");
+				Menu.main(null);
 		case 6:
 				for(int i=0;i<30;i++){
 					System.out.println("");
 				}
 				System.out.println("Você escolheu imprimir numero de elementos");
 				Menu.main(null);
+		case 99:
+				for(int i=0;i<30;i++){
+					System.out.println("");
+				}
+				System.out.println("Voce escolheu sair do programa...");
+				System.out.println("Caso voce realmente deseja sair do "
+						+ "programa digite S caso não digite N: ");
+				
+				sairopc = Menu.entrada.nextLine().charAt(0);
+				
+				switch(sairopc){
+				
+				case 'S': case 's':
+					System.out.println("Você escolheu sair do programa");
+					System.exit(0);
+					break;
+				case 'N': case 'n':
+					for(int i=0;i<30;i++){
+						System.out.println("");
+					}
+					Menu.main(null);
+					break;
+				default:
+					for(int i=0;i<30;i++){
+						System.out.println("");
+					}
+					System.out.println("Opção Inválida");
+					Menu.main(null);
+					break;
+				}
 		default:
 				for(int i=0;i<30;i++){
 					System.out.println("");

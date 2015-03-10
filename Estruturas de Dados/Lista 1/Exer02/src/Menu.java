@@ -11,6 +11,8 @@ public class Menu {
 		MenuGlobal.menuglobal();
 		opc = entrada.nextByte();
 		
+		entrada.nextLine();
+		
 		MenuGlobal.switchmenu(opc);
 			
 	}
