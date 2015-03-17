@@ -11,6 +11,6 @@ public class MenuGlobal {
 			System.out.println("4) Dividir");
 			System.out.println("9) Sair");
 			System.out.println("****************************");
-			System.out.println("Digite a opção desejada: ");
+			System.out.print("Digite a opção desejada: ");
 	}
 }

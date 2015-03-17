@@ -1,8 +1,6 @@
 import java.util.*;
 
-
 public class Menu {
-	
 
 	static Scanner entrada = new Scanner(System.in);
 	
@@ -15,9 +13,5 @@ public class Menu {
 		
 		SwitchMenu.switchmenu(menu);
 		
-		
-		
-		
 	}
-
 }
